@@ -1,0 +1,92 @@
+.hero {
+  width: 100%;
+  max-width: 72rem;
+}
+
+.shell {
+  display: grid;
+  gap: 1.25rem;
+  padding: 1.5rem;
+  border: 1px solid var(--border-color);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.03), transparent 28%),
+    rgba(9, 12, 18, 0.88);
+  box-shadow: 0 0 0 1px rgba(74, 246, 38, 0.06), 0 24px 64px rgba(0, 0, 0, 0.35);
+}
+
+.kicker {
+  margin: 0;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #8b949e;
+}
+
+.title {
+  margin: 0;
+  font-size: clamp(2.5rem, 5vw, 4.75rem);
+  line-height: 0.98;
+  letter-spacing: -0.04em;
+}
+
+.accent {
+  color: var(--accent-color);
+}
+
+.subtitle {
+  margin: 0;
+  max-width: 56rem;
+  font-size: clamp(1rem, 1.5vw, 1.25rem);
+  line-height: 1.7;
+  color: #d0d7de;
+}
+
+.stats {
+  display: grid;
+  gap: 0.75rem;
+  padding: 1rem 0;
+  font-family: var(--font-mono);
+  font-size: 0.92rem;
+}
+
+.statRow {
+  display: flex;
+  gap: 0.75rem;
+  align-items: flex-start;
+}
+
+.statMarker {
+  color: var(--accent-color);
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.actionLink {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.75rem;
+  padding: 0.65rem 1rem;
+  border: 1px solid var(--border-color);
+  background: rgba(255, 255, 255, 0.02);
+  color: var(--text-main);
+  transition: border-color 160ms ease, background-color 160ms ease, transform 160ms ease;
+}
+
+.actionLink:hover,
+.actionLink:focus-visible {
+  border-color: rgba(74, 246, 38, 0.55);
+  background: rgba(74, 246, 38, 0.08);
+  transform: translateY(-1px);
+}
+
+@media (min-width: 768px) {
+  .shell {
+    padding: 2rem;
+  }
+}

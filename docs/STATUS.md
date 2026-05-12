@@ -20,8 +20,10 @@
     *   **Key Deliverables:**
         *   Initialized Next.js project with static export config.
         *   Core layout and "IDE-inspired" theme.
+        *   CSS Modules-based Hero and page styling.
         *   Functional Hero section component.
-        *   Basic MDX architecture setup.
+        *   Basic MDX architecture setup with a content reader scaffold.
+        *   Validated by production build and lint checks.
 
 ### Upcoming Sprints
 
