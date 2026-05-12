@@ -42,7 +42,7 @@ The project is being developed across four sprints, each with a specific focus:
 3.  **Testing & Automation:** Building the testing suite and CI/CD workflow.
 4.  **Refinement & Polish:** Finalizing Framer Motion scrollytelling, accessibility, and documentation review.
 
-Current status: Sprint 3 is complete, and Sprint 4 is focused on polish, motion, and documentation cleanup.
+Current status: Sprint 4 and production verification are complete, and the live site is verified on GitHub Pages.
 
 For a more detailed breakdown, please see the [ROADMAP.md](docs/ROADMAP.md) and the individual sprint plans in the `docs/sprints` directory.
 
