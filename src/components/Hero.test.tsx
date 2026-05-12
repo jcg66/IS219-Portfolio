@@ -14,10 +14,10 @@ describe("Hero", () => {
     const githubLink = screen.getByRole("link", { name: "View GitHub" });
     const linkedInLink = screen.getByRole("link", { name: "Connect on LinkedIn" });
 
-    expect(githubLink).toHaveAttribute("href", "https://github.com");
+    expect(githubLink).toHaveAttribute("href", "https://github.com/jcg66");
     expect(githubLink).toHaveAttribute("target", "_blank");
     expect(githubLink).toHaveAttribute("rel", "noopener noreferrer");
-    expect(linkedInLink).toHaveAttribute("href", "https://linkedin.com");
+    expect(linkedInLink).toHaveAttribute("href", "https://linkedin.com/in/james-c-girgis");
     expect(linkedInLink).toHaveAttribute("target", "_blank");
     expect(linkedInLink).toHaveAttribute("rel", "noopener noreferrer");
   });

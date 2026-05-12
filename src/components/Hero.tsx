@@ -26,10 +26,10 @@ const Hero = () => {
           </div>
         </div>
         <div className={styles.actions}>
-          <a href="https://github.com" target="_blank" rel="noopener noreferrer" className={styles.actionLink}>
+          <a href="https://github.com/jcg66" target="_blank" rel="noopener noreferrer" className={styles.actionLink}>
             View GitHub
           </a>
-          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className={styles.actionLink}>
+          <a href="https://linkedin.com/in/james-c-girgis" target="_blank" rel="noopener noreferrer" className={styles.actionLink}>
             Connect on LinkedIn
           </a>
         </div>

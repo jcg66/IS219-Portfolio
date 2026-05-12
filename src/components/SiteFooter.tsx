@@ -17,10 +17,10 @@ export default function SiteFooter({ year }: SiteFooterProps) {
           <span>Open to collaboration — {year}</span>
         </div>
         <div className={styles.links}>
-          <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/jcg66" target="_blank" rel="noopener noreferrer">
             GitHub
           </a>
-          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+          <a href="https://linkedin.com/in/james-c-girgis" target="_blank" rel="noopener noreferrer">
             LinkedIn
           </a>
         </div>

@@ -22,10 +22,10 @@ test("keeps outbound links explicit and safe", async ({ page }) => {
   const githubLink = page.getByRole("link", { name: "View GitHub" });
   const linkedInLink = page.getByRole("link", { name: "Connect on LinkedIn" });
 
-  await expect(githubLink).toHaveAttribute("href", "https://github.com");
+  await expect(githubLink).toHaveAttribute("href", "https://github.com/jcg66");
   await expect(githubLink).toHaveAttribute("target", "_blank");
   await expect(githubLink).toHaveAttribute("rel", "noopener noreferrer");
-  await expect(linkedInLink).toHaveAttribute("href", "https://linkedin.com");
+  await expect(linkedInLink).toHaveAttribute("href", "https://linkedin.com/in/james-c-girgis");
   await expect(linkedInLink).toHaveAttribute("target", "_blank");
   await expect(linkedInLink).toHaveAttribute("rel", "noopener noreferrer");
 
