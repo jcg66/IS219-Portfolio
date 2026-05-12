@@ -10,14 +10,14 @@
 
 .stack {
   display: grid;
-  gap: 4rem;
+  gap: 3rem;
   width: 100%;
   max-width: 72rem;
 }
 
 .sectionBlock {
   display: grid;
-  gap: 1.5rem;
+  gap: 1.1rem;
   scroll-snap-align: start;
 }
 
@@ -27,70 +27,141 @@
 
 .sectionHeader {
   display: grid;
-  gap: 0.5rem;
+  gap: 0.3rem;
 }
 
 .sectionKicker {
   margin: 0;
   font-family: var(--font-mono);
-  font-size: 0.75rem;
-  letter-spacing: 0.18em;
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
   color: #8b949e;
 }
 
 .sectionTitle {
   margin: 0;
-  font-size: clamp(1.8rem, 3vw, 2.6rem);
-  line-height: 1.05;
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: clamp(1.45rem, 2.2vw, 2rem);
+  line-height: 1.08;
+  color: #cfd8e3;
 }
 
 .projectList {
   display: grid;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 
 .projectMeta {
   display: grid;
-  gap: 1rem;
-  margin-bottom: 1.25rem;
+  gap: 0.75rem;
+  margin-bottom: 0.9rem;
+}
+
+.projectHeader {
+  display: grid;
+  gap: 0.2rem;
+}
+
+.projectTitle {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-weight: 700;
+  font-size: clamp(1.35rem, 2vw, 1.75rem);
+  line-height: 1.08;
+  color: #eef3f8;
 }
 
 .projectSummary {
   margin: 0;
-  line-height: 1.7;
+  line-height: 1.5;
   color: #d0d7de;
 }
 
 .projectFacts {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
-  gap: 1rem;
+  gap: 0.8rem;
   margin: 0;
 }
 
 .projectFacts div {
   display: grid;
-  gap: 0.25rem;
+  gap: 0.2rem;
 }
 
 .projectFacts dt {
   font-family: var(--font-mono);
-  font-size: 0.8rem;
-  letter-spacing: 0.12em;
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--accent-color);
 }
 
 .projectFacts dd {
   margin: 0;
-  line-height: 1.6;
+  line-height: 1.45;
   color: #d0d7de;
 }
 
 .projectContent {
   display: grid;
-  gap: 1rem;
+  gap: 0.65rem;
+}
+
+.projectContent :global(p),
+.projectContent :global(ul),
+.projectContent :global(ol),
+.projectContent :global(blockquote),
+.projectContent :global(pre) {
+  margin: 0;
+}
+
+.projectContent :global(ul),
+.projectContent :global(ol) {
+  padding-left: 1.15rem;
+}
+
+.projectContent :global(li + li) {
+  margin-top: 0.35rem;
+}
+
+.projectContent :global(li::marker) {
+  color: var(--accent-color);
+}
+
+.projectContent :global(a) {
+  color: #8ab4ff;
+  text-decoration: underline;
+  text-underline-offset: 0.12em;
+}
+
+.projectLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  min-height: 2.35rem;
+  padding: 0.42rem 0.75rem;
+  border: 1px solid rgba(74, 246, 38, 0.38);
+  border-radius: 999px;
+  background: rgba(74, 246, 38, 0.08);
+  color: #eef3f8;
+  text-decoration: none;
+  transition: transform 160ms ease, border-color 160ms ease, background-color 160ms ease;
+}
+
+.projectLink:hover,
+.projectLink:focus-visible {
+  border-color: rgba(74, 246, 38, 0.7);
+  background: rgba(74, 246, 38, 0.14);
+  text-decoration: none;
+  transform: translateY(-1px);
+}
+
+.projectLinkIcon {
+  font-size: 0.95em;
+  line-height: 1;
 }
 
 .skipLink {
@@ -114,6 +185,14 @@
 @media (min-width: 768px) {
   .page {
     padding: 6rem;
+  }
+
+  .stack {
+    gap: 3.5rem;
+  }
+
+  .sectionBlock {
+    gap: 1.2rem;
   }
 
   .skipLink {

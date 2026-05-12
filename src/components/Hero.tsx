@@ -4,25 +4,25 @@ const Hero = () => {
   return (
     <section className={styles.hero}>
       <div className={styles.shell}>
-        <p className={styles.kicker}>System Initialization</p>
+        <p className={styles.kicker}>Portfolio snapshot</p>
         <h1 className={styles.title}>
-          [Your Name] <span className={styles.accent}>{"//"}</span> AI-Forward Systems Engineer
+          James Girgis <span className={styles.accent}>{"//"}</span> AI-Forward Systems Engineer
         </h1>
         <p className={styles.subtitle}>
-          Specializing in automated threat intelligence and RAG-based orchestration. I build high-performance security tools optimized for resource-constrained environments.
+          Specializing in automated threat intelligence and RAG-based orchestration. I build focused security tools that stay useful in constrained environments.
         </p>
         <div className={styles.stats}>
           <div className={styles.statRow}>
             <span className={styles.statMarker}>◆</span>
-            <span>Focus: AI/Cybersecurity Fusion</span>
+            <span>Focus: AI security tooling</span>
           </div>
           <div className={styles.statRow}>
             <span className={styles.statMarker}>◆</span>
-            <span>Architecture: Vector DBs, RAG, Local Inference</span>
+            <span>Stack: vector search, RAG, local inference</span>
           </div>
           <div className={styles.statRow}>
             <span className={styles.statMarker}>◆</span>
-            <span>Efficiency Metric: Optimized for 8GB RAM deployments</span>
+            <span>Constraint: optimized for 8GB RAM deployments</span>
           </div>
         </div>
         <div className={styles.actions}>

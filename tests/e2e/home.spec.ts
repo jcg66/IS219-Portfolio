@@ -8,9 +8,9 @@ test("renders the main portfolio sections", async ({ page }) => {
   await expect(page.locator("main")).toBeVisible();
   await expect(page.getByRole("heading", { level: 1, name: /AI-Forward Systems Engineer/i })).toBeVisible();
   await expect(page.getByRole("heading", { name: "Efficiency as a feature." })).toBeVisible();
-  await expect(page.getByRole("heading", { name: "Featured projects." })).toBeVisible();
-  await expect(page.getByRole("heading", { name: "The toolbox." })).toBeVisible();
-  await expect(page.getByRole("heading", { name: "The footer." })).toBeVisible();
+  await expect(page.getByRole("heading", { name: "Selected projects." })).toBeVisible();
+  await expect(page.getByRole("heading", { name: "Toolbox inventory." })).toBeVisible();
+  await expect(page.getByRole("heading", { name: "Stay connected." })).toBeVisible();
 
   await expect(page.getByRole("link", { name: "Open repo" })).toHaveCount(2);
   await expect(page.getByRole("link", { name: "Open live demo" })).toHaveCount(2);
@@ -45,5 +45,5 @@ test("renders the current year in the footer status", async ({ page }) => {
 
   const currentYear = new Date().getFullYear();
 
-  await expect(page.getByText(`All Systems Operational — ${currentYear}`)).toBeVisible();
+  await expect(page.getByText(`Open to collaboration — ${currentYear}`)).toBeVisible();
 });

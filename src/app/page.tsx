@@ -29,16 +29,19 @@ export default async function Home() {
           <ScrollReveal className={styles.sectionBlock}>
             <section aria-labelledby="projects-title">
               <div className={styles.sectionHeader}>
-                <p className={styles.sectionKicker}>The Proof</p>
+                <p className={styles.sectionKicker}>Case studies</p>
                 <h2 id="projects-title" className={styles.sectionTitle}>
-                  Featured projects.
+                  Selected projects.
                 </h2>
               </div>
               <div className={styles.projectList}>
                 {projects.map((project, index) => (
                   <ScrollReveal key={project.slug} className={styles.projectItem} delay={index * 0.08}>
-                    <TerminalWrapper title={`${project.frontmatter.title} // ${project.frontmatter.status}`}>
+                    <TerminalWrapper title={project.frontmatter.status}>
                       <div className={styles.projectMeta}>
+                        <div className={styles.projectHeader}>
+                          <h3 className={styles.projectTitle}>{project.frontmatter.title}</h3>
+                        </div>
                         <p className={styles.projectSummary}>{project.frontmatter.summary}</p>
                         <dl className={styles.projectFacts}>
                           <div>
@@ -48,8 +51,16 @@ export default async function Home() {
                           <div>
                             <dt>Repository</dt>
                             <dd>
-                              <a href={project.frontmatter.links.repository} target="_blank" rel="noopener noreferrer">
-                                Open repo
+                              <a
+                                className={styles.projectLink}
+                                href={project.frontmatter.links.repository}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                              >
+                                <span>Open repo</span>
+                                <span aria-hidden="true" className={styles.projectLinkIcon}>
+                                  ↗
+                                </span>
                               </a>
                             </dd>
                           </div>
@@ -57,8 +68,16 @@ export default async function Home() {
                             <div>
                               <dt>Live</dt>
                               <dd>
-                                <a href={project.frontmatter.links.live} target="_blank" rel="noopener noreferrer">
-                                  Open live demo
+                                <a
+                                  className={styles.projectLink}
+                                  href={project.frontmatter.links.live}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                >
+                                  <span>Open live demo</span>
+                                  <span aria-hidden="true" className={styles.projectLinkIcon}>
+                                    ↗
+                                  </span>
                                 </a>
                               </dd>
                             </div>

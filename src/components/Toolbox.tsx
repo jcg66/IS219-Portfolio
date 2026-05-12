@@ -27,19 +27,38 @@ export default function Toolbox() {
   return (
     <section className={styles.section} aria-labelledby="toolbox-heading">
       <div className={styles.header}>
-        <p className={styles.kicker}>Registry</p>
+        <p className={styles.kicker}>Stack</p>
         <h2 id="toolbox-heading" className={styles.title}>
-          The toolbox.
+          Toolbox inventory.
         </h2>
       </div>
       <div className={styles.panel}>
-        <pre className={styles.codeBlock}>
-{`{
-  "orchestration": ["LangChain", "Hugging Face", "Groq"],
-  "infrastructure": ["Qdrant", "GitHub Actions", "GitHub Pages"],
-  "languages": ["Python", "Next.js", "TypeScript"],
-  "security": ["MITRE ATT&CK", "NVD Integration"]
-}`}
+        <pre className={styles.codeBlock} aria-label="Toolbox JSON registry">
+          <code className={styles.code}>
+            <span className={styles.codeLine}>
+              <span className={styles.codePunctuation}>{`{`}</span>
+            </span>
+            {toolboxGroups.map((group, index) => (
+              <span key={group.key} className={styles.codeLine}>
+                <span className={styles.codeIndent} aria-hidden="true">
+                  {"  "}
+                </span>
+                <span className={styles.codeKey}>{`"${group.key}"`}</span>
+                <span className={styles.codePunctuation}>{": ["}</span>
+                {group.items.map((item, itemIndex) => (
+                  <span key={item}>
+                    <span className={styles.codeString}>{`"${item}"`}</span>
+                    {itemIndex < group.items.length - 1 ? <span className={styles.codePunctuation}>, </span> : null}
+                  </span>
+                ))}
+                <span className={styles.codePunctuation}>{"]"}</span>
+                {index < toolboxGroups.length - 1 ? <span className={styles.codePunctuation}>,</span> : null}
+              </span>
+            ))}
+            <span className={styles.codeLine}>
+              <span className={styles.codePunctuation}>{`}`}</span>
+            </span>
+          </code>
         </pre>
         <dl className={styles.list}>
           {toolboxGroups.map((group) => (

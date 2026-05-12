@@ -4,12 +4,12 @@ import { describe, expect, it } from "vitest";
 import Hero from "./Hero";
 
 describe("Hero", () => {
-  it("renders the system initialization copy and safe social links", () => {
+  it("renders the portfolio snapshot copy and safe social links", () => {
     render(<Hero />);
 
-    expect(screen.getByText("System Initialization")).toBeInTheDocument();
+    expect(screen.getByText("Portfolio snapshot")).toBeInTheDocument();
     expect(screen.getByRole("heading", { level: 1, name: /AI-Forward Systems Engineer/i })).toBeInTheDocument();
-    expect(screen.getByText(/resource-constrained environments/i)).toBeInTheDocument();
+    expect(screen.getByText(/constrained environments/i)).toBeInTheDocument();
 
     const githubLink = screen.getByRole("link", { name: "View GitHub" });
     const linkedInLink = screen.getByRole("link", { name: "Connect on LinkedIn" });
