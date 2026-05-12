@@ -5,13 +5,45 @@
 
 .shell {
   display: grid;
-  gap: 1rem;
+  gap: 1.15rem;
   padding: 1.5rem;
   border: 1px solid var(--border-color);
-  background:
+  background-image:
     linear-gradient(180deg, rgba(255, 255, 255, 0.03), transparent 28%),
-    rgba(9, 12, 18, 0.88);
+    linear-gradient(rgba(9, 12, 18, 0.08), rgba(9, 12, 18, 0.08)),
+    var(--hero-geometry);
+  background-position: center, center, center;
+  background-size: cover, cover, cover;
+  background-repeat: no-repeat;
   box-shadow: 0 0 0 1px rgba(74, 246, 38, 0.06), 0 24px 64px rgba(0, 0, 0, 0.35);
+}
+
+.heroHeader {
+  display: grid;
+  gap: 1rem;
+}
+
+.portraitFrame {
+  width: clamp(6rem, 14vw, 8rem);
+  aspect-ratio: 1;
+  padding: 0.35rem;
+  border-radius: 999px;
+  background: rgba(9, 12, 18, 0.82);
+  border: 1px solid rgba(74, 246, 38, 0.28);
+  box-shadow: 0 0 0 1px rgba(74, 246, 38, 0.08), 0 14px 32px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(8px);
+}
+
+.portrait {
+  width: 100%;
+  height: 100%;
+  border-radius: 999px;
+  display: block;
+}
+
+.identity {
+  display: grid;
+  gap: 0.35rem;
 }
 
 .kicker {
@@ -34,6 +66,11 @@
 
 .accent {
   color: var(--accent-color);
+}
+
+.heroBody {
+  display: grid;
+  gap: 0.85rem;
 }
 
 .subtitle {
@@ -90,5 +127,12 @@
 @media (min-width: 768px) {
   .shell {
     padding: 2rem;
+    gap: 1.25rem;
+  }
+
+  .heroHeader {
+    grid-template-columns: auto minmax(0, 1fr);
+    align-items: center;
+    gap: 1.25rem;
   }
 }
