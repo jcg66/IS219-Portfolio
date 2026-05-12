@@ -10,6 +10,12 @@
     *   Add precise layout transitions for when content loads or changes.
     *   Ensure animations are linear and "calibrated," avoiding playful or bouncy effects.
 
+*   [ ] **Add Minimal Scrollytelling Interactions:**
+    *   Introduce fading-on-scroll for key sections so content reveals itself as the user moves down the page.
+    *   Add scroll snapping where it supports the narrative flow without feeling forced.
+    *   Let scrolled content rise up into view for a light parallax-style reveal that stays restrained and professional.
+    *   Keep motion minimal and purposeful, aligned with the reference approach from Metabole Studio.
+
 *   [ ] **Conduct Accessibility Audit:**
     *   Use browser tools (like Lighthouse) and manual checks to ensure the site meets WCAG AA standards.
     *   Verify color contrast ratios.
