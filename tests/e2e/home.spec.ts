@@ -1,7 +1,9 @@
 import { expect, test } from "@playwright/test";
 
+const sitePath = "/IS219-Portfolio/";
+
 test("renders the main portfolio sections", async ({ page }) => {
-  await page.goto("/");
+  await page.goto(sitePath);
 
   await expect(page.locator("main")).toBeVisible();
   await expect(page.getByRole("heading", { level: 1, name: /AI-Forward Systems Engineer/i })).toBeVisible();
@@ -15,7 +17,7 @@ test("renders the main portfolio sections", async ({ page }) => {
 });
 
 test("keeps outbound links explicit and safe", async ({ page }) => {
-  await page.goto("/");
+  await page.goto(sitePath);
 
   const githubLink = page.getByRole("link", { name: "View GitHub" });
   const linkedInLink = page.getByRole("link", { name: "Connect on LinkedIn" });
@@ -39,7 +41,7 @@ test("keeps outbound links explicit and safe", async ({ page }) => {
 });
 
 test("renders the current year in the footer status", async ({ page }) => {
-  await page.goto("/");
+  await page.goto(sitePath);
 
   const currentYear = new Date().getFullYear();
 
