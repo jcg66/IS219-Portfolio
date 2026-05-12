@@ -1,0 +1,29 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="88" y1="62" x2="420" y2="448" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#101826"/>
+      <stop offset="1" stop-color="#0A0F16"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="120" y1="96" x2="392" y2="408" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#4AF626" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="#238636" stop-opacity="0.9"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(256 176) rotate(90) scale(164 164)">
+      <stop stop-color="#4AF626" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#4AF626" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <circle cx="256" cy="256" r="248" fill="url(#bg)"/>
+  <circle cx="256" cy="256" r="210" fill="url(#glow)"/>
+  <circle cx="256" cy="256" r="214" stroke="#243041" stroke-width="6"/>
+  <circle cx="256" cy="256" r="182" fill="#0F1722" stroke="#223042" stroke-width="2"/>
+  <path d="M142 308c18-62 63-100 114-100s96 38 114 100" stroke="url(#accent)" stroke-width="18" stroke-linecap="round"/>
+  <circle cx="210" cy="210" r="18" fill="#C9D1D9"/>
+  <circle cx="302" cy="210" r="18" fill="#C9D1D9"/>
+  <path d="M178 154c22-18 49-30 78-30s56 12 78 30" stroke="#2E3B4C" stroke-width="10" stroke-linecap="round"/>
+  <path d="M214 286c12 10 27 16 42 16s30-6 42-16" stroke="#C9D1D9" stroke-width="12" stroke-linecap="round"/>
+  <path d="M116 348c28-28 64-48 100-58" stroke="#2A3647" stroke-width="4" stroke-dasharray="8 10" stroke-linecap="round"/>
+  <path d="M396 348c-28-28-64-48-100-58" stroke="#2A3647" stroke-width="4" stroke-dasharray="8 10" stroke-linecap="round"/>
+  <rect x="168" y="346" width="176" height="42" rx="21" fill="#12202B" stroke="#243546" stroke-width="2"/>
+  <text x="256" y="374" fill="#E6EDF3" font-family="Inter, sans-serif" font-size="32" font-weight="700" text-anchor="middle" letter-spacing="8">JG</text>
+</svg>
