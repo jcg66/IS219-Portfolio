@@ -1,4 +1,4 @@
 :HL["/IS219-Portfolio/_next/static/chunks/043fgvctyxv~5.css","style"]
 :HL["/IS219-Portfolio/_next/static/chunks/090_c9g04lihj.css","style"]
 :HL["/IS219-Portfolio/hero-portrait.jpg","image"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}},"staleTime":300,"buildId":"TtLw_XzW0jK0xWcCAspMS"}
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}},"staleTime":300,"buildId":"xl4MMrY_Vo4st9a-Jm6bQ"}
