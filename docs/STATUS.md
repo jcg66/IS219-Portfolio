@@ -4,9 +4,9 @@
 
 ## High-Level Status
 
-*   **Overall Progress:** `SPRINT 3 COMPLETE`
-*   **Current Phase:** `Development`
-*   **Next Step:** Begin Sprint 4: Refinement & Polish
+*   **Overall Progress:** `SPRINT 4 COMPLETE`
+*   **Current Phase:** `Polish / Deployment`
+*   **Next Step:** Verify the live site after the next production push
 
 ---
 
@@ -46,7 +46,17 @@
         *   E2E coverage for the main sections and safe outbound link attributes.
         *   GitHub Actions workflow covering linting, type checking, unit tests, E2E tests, static build, and GitHub Pages deployment.
 
+*   **Sprint 4: Refinement & Polish**
+    *   **Status:** `Completed`
+    *   **Goal:** Add final touches, animations, and perform a full documentation and accessibility review.
+    *   **Key Deliverables:**
+        *   Framer Motion scrollytelling with restrained fade-and-rise reveals.
+        *   Scroll snapping for the main content flow.
+        *   Accessibility polish including skip navigation, focus states, and automated axe coverage.
+        *   Final documentation review for README clarity and Sprint 4 alignment.
+        *   Footer system status now reflects the current year.
+
 ### Upcoming Sprints
 
-*   **Sprint 4: Refinement & Polish**
+*   **Production Verification**
     *   **Status:** `Not Started`

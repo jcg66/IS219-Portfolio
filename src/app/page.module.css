@@ -4,6 +4,8 @@
   align-items: flex-start;
   justify-content: center;
   padding: 3rem 1.5rem;
+  scroll-snap-type: y proximity;
+  scroll-padding-top: 2rem;
 }
 
 .stack {
@@ -16,6 +18,11 @@
 .sectionBlock {
   display: grid;
   gap: 1.5rem;
+  scroll-snap-align: start;
+}
+
+.projectItem {
+  scroll-snap-align: start;
 }
 
 .sectionHeader {
@@ -86,8 +93,31 @@
   gap: 1rem;
 }
 
+.skipLink {
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+  z-index: 10;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--border-color);
+  background: #0b1220;
+  color: var(--text-main);
+  transform: translateY(-180%);
+  transition: transform 160ms ease, border-color 160ms ease;
+}
+
+.skipLink:focus-visible {
+  transform: translateY(0);
+  border-color: rgba(74, 246, 38, 0.55);
+}
+
 @media (min-width: 768px) {
   .page {
     padding: 6rem;
+  }
+
+  .skipLink {
+    left: 1.5rem;
+    top: 1.5rem;
   }
 }

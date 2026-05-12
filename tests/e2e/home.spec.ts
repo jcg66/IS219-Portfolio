@@ -8,6 +8,7 @@ test("renders the main portfolio sections", async ({ page }) => {
   await expect(page.getByRole("heading", { name: "Efficiency as a feature." })).toBeVisible();
   await expect(page.getByRole("heading", { name: "Featured projects." })).toBeVisible();
   await expect(page.getByRole("heading", { name: "The toolbox." })).toBeVisible();
+  await expect(page.getByRole("heading", { name: "The footer." })).toBeVisible();
 
   await expect(page.getByRole("link", { name: "Open repo" })).toHaveCount(2);
   await expect(page.getByRole("link", { name: "Open live demo" })).toHaveCount(2);
@@ -35,4 +36,12 @@ test("keeps outbound links explicit and safe", async ({ page }) => {
     await expect(link).toHaveAttribute("target", "_blank");
     await expect(link).toHaveAttribute("rel", "noopener noreferrer");
   }
+});
+
+test("renders the current year in the footer status", async ({ page }) => {
+  await page.goto("/");
+
+  const currentYear = new Date().getFullYear();
+
+  await expect(page.getByText(`All Systems Operational — ${currentYear}`)).toBeVisible();
 });
