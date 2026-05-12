@@ -1,0 +1,40 @@
+.terminal {
+  border: 1px solid var(--border-color);
+  background: rgba(9, 12, 18, 0.94);
+  box-shadow: 0 0 0 1px rgba(74, 246, 38, 0.06);
+}
+
+.chrome {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.85rem 1rem;
+  border-bottom: 1px solid rgba(48, 54, 61, 0.9);
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.dots {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.dots span {
+  width: 0.65rem;
+  height: 0.65rem;
+  border-radius: 999px;
+  background: var(--accent-color);
+  opacity: 0.8;
+}
+
+.title {
+  margin: 0;
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #d0d7de;
+}
+
+.body {
+  padding: 1.25rem;
+}

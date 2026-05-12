@@ -6,6 +6,86 @@
   padding: 3rem 1.5rem;
 }
 
+.stack {
+  display: grid;
+  gap: 4rem;
+  width: 100%;
+  max-width: 72rem;
+}
+
+.sectionBlock {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.sectionHeader {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.sectionKicker {
+  margin: 0;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #8b949e;
+}
+
+.sectionTitle {
+  margin: 0;
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  line-height: 1.05;
+}
+
+.projectList {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.projectMeta {
+  display: grid;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.projectSummary {
+  margin: 0;
+  line-height: 1.7;
+  color: #d0d7de;
+}
+
+.projectFacts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  gap: 1rem;
+  margin: 0;
+}
+
+.projectFacts div {
+  display: grid;
+  gap: 0.25rem;
+}
+
+.projectFacts dt {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent-color);
+}
+
+.projectFacts dd {
+  margin: 0;
+  line-height: 1.6;
+  color: #d0d7de;
+}
+
+.projectContent {
+  display: grid;
+  gap: 1rem;
+}
+
 @media (min-width: 768px) {
   .page {
     padding: 6rem;

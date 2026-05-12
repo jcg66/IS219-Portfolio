@@ -1,0 +1,32 @@
+---
+title: Semantic SOC Analyst
+status: STABLE / PRODUCTION
+summary: RAG-driven security triage for alert fatigue reduction on constrained hardware.
+tech:
+  - Qdrant
+  - Llama 3 via Groq
+  - LangChain
+  - Pytest
+links:
+  repository: https://github.com/example/semantic-soc-analyst
+  live: https://example.com/semantic-soc-analyst-demo
+  evidence: Automated Testing evidence included in pytest validation and deployment notes.
+---
+
+## Problem
+
+Alert fatigue makes security operations slow and noisy. Important signals get buried inside repetitive telemetry.
+
+## Solution
+
+I linked logs to NVD-style threat intelligence through a RAG workflow backed by Qdrant, with local inference constrained to 8GB RAM.
+
+## Key Features
+
+- Hybrid-local architecture tuned for low-memory environments.
+- Queryable evidence retrieval for faster analyst decisions.
+- Automated testing coverage for the retrieval and orchestration layers.
+
+## Outcome
+
+The project demonstrates practical AI orchestration without relying on a heavy backend and includes explicit automated testing evidence.

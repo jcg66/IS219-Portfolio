@@ -25,6 +25,17 @@
         *   Basic MDX architecture setup with a content reader scaffold.
         *   Validated by production build and lint checks.
 
+*   **Sprint 2: Content & Case Studies**
+    *   **Status:** `Completed`
+    *   **Goal:** Integrate the project case studies and technical strategy content.
+    *   **Key Deliverables:**
+        *   Technical Strategy section with Efficiency Mandate and AI Workflow narrative.
+        *   Reusable TerminalWrapper component for project case studies.
+        *   MDX case studies for Semantic SOC Analyst and Revised Midterm.
+        *   Server-side MDX loader with gray-matter/next-mdx-remote RSC support.
+        *   Zod validation for project frontmatter.
+        *   Toolbox section styled like a configuration file.
+
 ### Upcoming Sprints
 
 *   **Sprint 2: Content & Case Studies**
