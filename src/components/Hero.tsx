@@ -25,7 +25,7 @@ const Hero = () => {
             />
           </div>
           <div className={styles.identity}>
-            <p className={styles.kicker}>Portfolio snapshot</p>
+            <p className={styles.kicker}>Snapshot</p>
             <h1 className={styles.title}>
               James Girgis <span className={styles.accent}>{"//"}</span> AI-Forward Systems Engineer
             </h1>
@@ -33,20 +33,20 @@ const Hero = () => {
         </div>
         <div className={styles.heroBody}>
           <p className={styles.subtitle}>
-            Specializing in automated threat intelligence and RAG-based orchestration. I build focused security tools that stay useful in constrained environments.
+            AI security and RAG workflows for constrained systems.
           </p>
           <div className={styles.stats}>
             <div className={styles.statRow}>
               <span className={styles.statMarker}>◆</span>
-              <span>Focus: AI security tooling</span>
+              <span>AI security tooling</span>
             </div>
             <div className={styles.statRow}>
               <span className={styles.statMarker}>◆</span>
-              <span>Stack: vector search, RAG, local inference</span>
+              <span>Vector search, RAG, local inference</span>
             </div>
             <div className={styles.statRow}>
               <span className={styles.statMarker}>◆</span>
-              <span>Constraint: optimized for 8GB RAM deployments</span>
+              <span>On-device first</span>
             </div>
           </div>
           <div className={styles.actions}>

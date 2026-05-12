@@ -7,9 +7,9 @@ describe("Hero", () => {
   it("renders the portfolio snapshot copy and safe social links", () => {
     render(<Hero />);
 
-    expect(screen.getByText("Portfolio snapshot")).toBeInTheDocument();
+    expect(screen.getByText("Snapshot")).toBeInTheDocument();
     expect(screen.getByRole("heading", { level: 1, name: /AI-Forward Systems Engineer/i })).toBeInTheDocument();
-    expect(screen.getByText(/constrained environments/i)).toBeInTheDocument();
+    expect(screen.getByText(/AI security and RAG workflows/i)).toBeInTheDocument();
 
     const githubLink = screen.getByRole("link", { name: "View GitHub" });
     const linkedInLink = screen.getByRole("link", { name: "Connect on LinkedIn" });

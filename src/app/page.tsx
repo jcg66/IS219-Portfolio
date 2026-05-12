@@ -29,10 +29,8 @@ export default async function Home() {
           <ScrollReveal className={styles.sectionBlock}>
             <section aria-labelledby="projects-title">
               <div className={styles.sectionHeader}>
-                <p className={styles.sectionKicker}>Case studies</p>
-                <h2 id="projects-title" className={styles.sectionTitle}>
-                  Selected projects.
-                </h2>
+                <p className={styles.sectionKicker}>Work</p>
+                <h2 id="projects-title" className={styles.sectionTitle}>Projects</h2>
               </div>
               <div className={styles.projectList}>
                 {projects.map((project, index) => (

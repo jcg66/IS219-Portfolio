@@ -1,7 +1,7 @@
 ---
-title: Semantic SOC Analyst
+title: SOC Analyst
 status: STABLE / PRODUCTION
-summary: RAG-driven security triage for alert fatigue reduction on constrained hardware.
+summary: RAG triage for noisy alerts.
 tech:
   - Qdrant
   - Llama 3 via Groq
@@ -15,19 +15,19 @@ links:
 
 ## Problem
 
-Alert fatigue makes security operations slow and noisy. Important signals get buried inside repetitive telemetry.
+Alert noise slows triage.
 
-## Solution
+## Fix
 
-I linked logs to NVD-style threat intelligence through a RAG workflow backed by Qdrant, with local inference constrained to 8GB RAM.
+RAG + Qdrant + local inference.
 
-## Key Features
+## Features
 
-- Hybrid-local architecture tuned for low-memory environments.
-- Queryable evidence retrieval for faster analyst decisions.
-- Automated testing coverage for the retrieval and orchestration layers.
-- Grounded LLM reasoning using RAG to eliminate common hallucinations in threat assessment.
+- Low-memory setup.
+- Fast evidence lookup.
+- Test coverage.
+- Grounded threat answers.
 
-## Outcome
+## Result
 
-The project demonstrates practical AI orchestration without relying on a heavy backend and includes explicit automated testing evidence.
+Cleaner triage with less noise.

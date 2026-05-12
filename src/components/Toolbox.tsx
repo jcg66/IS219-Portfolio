@@ -28,9 +28,7 @@ export default function Toolbox() {
     <section className={styles.section} aria-labelledby="toolbox-heading">
       <div className={styles.header}>
         <p className={styles.kicker}>Stack</p>
-        <h2 id="toolbox-heading" className={styles.title}>
-          Toolbox inventory.
-        </h2>
+        <h2 id="toolbox-heading" className={styles.title}>Toolbox</h2>
       </div>
       <div className={styles.panel}>
         <pre className={styles.codeBlock} aria-label="Toolbox JSON registry">
