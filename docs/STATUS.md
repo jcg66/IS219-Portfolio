@@ -4,9 +4,9 @@
 
 ## High-Level Status
 
-*   **Overall Progress:** `SPRINT 1 COMPLETE`
+*   **Overall Progress:** `SPRINT 3 COMPLETE`
 *   **Current Phase:** `Development`
-*   **Next Step:** Begin Sprint 2: Content & Case Studies
+*   **Next Step:** Begin Sprint 4: Refinement & Polish
 
 ---
 
@@ -36,13 +36,17 @@
         *   Zod validation for project frontmatter.
         *   Toolbox section styled like a configuration file.
 
-### Upcoming Sprints
-
-*   **Sprint 2: Content & Case Studies**
-    *   **Status:** `Not Started`
-
 *   **Sprint 3: Testing & Automation**
-    *   **Status:** `Not Started`
+    *   **Status:** `Completed`
+    *   **Goal:** Implement a comprehensive testing suite and set up the CI/CD pipeline.
+    *   **Key Deliverables:**
+        *   Vitest configured for React component testing.
+        *   Unit tests for the Hero section and TerminalWrapper component.
+        *   Playwright configured for end-to-end testing of the single-page portfolio.
+        *   E2E coverage for the main sections and safe outbound link attributes.
+        *   GitHub Actions workflow covering linting, type checking, unit tests, E2E tests, static build, and GitHub Pages deployment.
+
+### Upcoming Sprints
 
 *   **Sprint 4: Refinement & Polish**
     *   **Status:** `Not Started`

@@ -37,7 +37,7 @@ export default async function Home() {
                     <div>
                       <dt>Repository</dt>
                       <dd>
-                        <a href={project.frontmatter.links.repository} target="_blank" rel="noreferrer">
+                        <a href={project.frontmatter.links.repository} target="_blank" rel="noopener noreferrer">
                           Open repo
                         </a>
                       </dd>
@@ -46,7 +46,7 @@ export default async function Home() {
                       <div>
                         <dt>Live</dt>
                         <dd>
-                          <a href={project.frontmatter.links.live} target="_blank" rel="noreferrer">
+                          <a href={project.frontmatter.links.live} target="_blank" rel="noopener noreferrer">
                             Open live demo
                           </a>
                         </dd>
