@@ -2,6 +2,8 @@
 
 This repository contains the source code for my personal portfolio, built to showcase my skills as an **AI-Forward Systems Engineer**. The site is designed with an "IDE-inspired" aesthetic, emphasizing technical rigor, efficiency, and a documentation-first approach.
 
+Live site: [https://jcg66.github.io/IS219-Portfolio/](https://jcg66.github.io/IS219-Portfolio/)
+
 ## Core Philosophy: The "Builder" Archetype
 
 This portfolio embodies the "Builder" archetype: a focus on creating high-utility, resource-optimized tools. The narrative is centered on bridging the gap between sophisticated AI orchestration and the reality of resource-constrained environments.
